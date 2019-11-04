@@ -17,6 +17,11 @@ author:
     name: Jari Arkko
     org: Ericsson
     email: jari.arkko@piuha.net
+  -
+    ins: T. Hardie
+    name: Ted Hardie
+    org: Google
+    email: ted.ietf@gmail.com
 
 informative:
   RFC5218:
@@ -176,7 +181,7 @@ The Design Expectations vs. Deployment Reality in Protocol Development  Workshop
 
 # Introduction {#introduction}
  
-The Design Expectations vs. Deployment Reality in Protocol Development  Workshop was convened by the Internet Architecture Board (IAB) in June 2019. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration.
+The Design Expectations vs. Deployment Reality in Protocol Development  Workshop was convened by the Internet Architecture Board (IAB) in June 2019. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration. While late in being submitted, this report is still an early version. Comments and contributions are appreciated.
 
 The background for the workshop was that a number of protocols have presumed specific deployment models during the development or early elaboration of the protocol. Actual deployments have, however, often run contrary to these early expectations when economies of scale, DDoS resilience, market consolidation, or other factors have come into play. These factors can result in the deployed reality being highly concentrated.
 
@@ -248,19 +253,48 @@ These papers are available from the IAB website {{CFP}} {{POS}}.
 
 ## Past experiences
 
-To be filled...
+The workshop investigated deployment cases from WebPKI to DNSSEC, from BGP to NATs, from DNS resolvers to CDNs, and from IOT to instant messaging and social media applications.
 
 ## Principles
 
-To be filled...
+Several underlying principles can be observed in the example cases that were discussed. Deployment failures tend to be associated with cases where interdependencies make progress difficult and there's no major advantage for early deployment. Despite persistent problems in the currently used technology, it becomes difficult for the ecosystem to switch to better technology. For instance, there are a number of areas where the Internet routing protocol, BGP, is lacking, but success in deploying significant improvements has been lacking, for instance in the area of security.
+
+Another principle appears to be first mover advantage. Several equally interesting technologies have fared in very different ways, depending whether there was an earlier system that provided most of the benefits of the new system. Again, despite potential problems in an already deployed technology, it becomes difficult to deploy improvements due to lack of immediate incentives and due to the competing and already deployed alternative that is proceeding forward in the ecosystem. For instance, WebPKI is very widely deployed and used, but DNSSEC is not. Is this because the earlier commercial adoption of WebPKI, and the initially more complex interdependencies between systems that wished to deploy DNSSEC.
+
+The workshop also discussed different types of deployment patterns on the Internet:
+
+* Delivering functionality over Internet as a web service. The Internet is an open and standardised system, but the service on top may be closed, essentially running two components of the service provider's software against each other over the browser and Internet infrastructure. Several large application systems have grown in the Internet in this manner, encompassing large amounts of functionality and a large fraction of Internet users.
+
+* Delivering concentrated network services that offer the standard capabilities of the Internet. Examples in this category include the provisioning of DNS resolution, some mail services, and so on.
+
+The second case is more interesting for an Internet architecture discussion. There can, however, be different underlying situations in that case. The service may be simply a concentrated way to provide a commodity service. The market should find a natural equilibrium for such situations. This may be fine, particularly, where the service does not provide any new underlying advantage to whoever is providing it (in the form of user data that can be commercialized, for instance, or as training data for an important machine learning service).
+
+Secondly, the service may be an extension beyond standard protocols, leading to some questions about how well standards and user expectations match. But those questions could be addressed by better or newer standards. But the third situation is more troubling: the service are provided in this concentrated manner due to business patterns that make it easier for particular entities to deploy such services.
 
 ## Centralised deployment models
 
-To be filled...
+Many of the participants have struggled with these trends and their effect on desirable characteristics of Internet systems, such as distributed, end-to-end architecture or privacy. Yet, there are many business and technical drivers causing the Internet architecture to become further and further centralised.
+
+The hopeful side of this issue is that there are some potential answers:
+
+* DDOS defenses do not have to come through large entities, as layered defenses and federation also helps similarly.
+* Surveillance state data capture can be fought with data object encryption, and not storing all of the datal in one place.
+* Open interface help guard against the bundling of services in one large entity; as long as there are open, well-defined interface to specific functions these functions can also be performed by other parties.
+* Commercial surveillance does not seem to curbed by current means. But there are still possibilities, such as stronger regulation, data minimisation, or browsers acting on behalf of users. There are hopeful signs that at least some browsers are becoming more aggressive in this regard. But more is needed.
+
+One comment made in the workshop that the Internet community needs to move back from regulation to trying to curb the architectural trend of centralization instead. Another comment was that discussing this in the abstract is not as useful as more concrete, practical actions. For instance, one might imagine DOH deployments with larger number of trusted resolvers.
 
 ## Security
 
-To be filled...
+This part of the discussed focused on whether in the current state of the Internet we actually need a new threat model.
+
+Many of the communications security concerns have been addressed in the past few years, with increasing encryption. However, issues with trusting endpoints on the other side of the communication have not been addressed, and are becoming more urgent with the advent or centralised service architectures.
+
+The participants in the workshop agreed that a new threat model is needed, and that non-communications-security issues need to be treated.
+
+Other security discussions were focused on IOT systems, algorithm agility issues, and experiences from difficult security upgrades such as the DNSSEC key rollover.
+
+The participants cautioned against relying too much on device manufacturers for security, and being clear on security models and assumptions. Security is often poorly understood, and the assumptions about who the system defends against and not are not clear.
 
 ## Future
 
@@ -370,4 +404,4 @@ The following is a list of participants on site and over a remote connection:
 
 # Acknowledgements {#ack}
 
-The author would like to thank the workshop participants, the members of the IAB, and the participants in the architecture discussion list for interesting discussions.
+The author would like to thank the workshop participants, the members of the IAB, and the participants in the architecture discussion list for interesting discussions. The workshop organizers would also like to thank Nokia for hosting the workshop in excellent facilities in Kirkkonummi, Finland.
