@@ -13,7 +13,7 @@ pi: [toc, sortrefs, symrefs]
 
 author:
   -
-    ins: J. Arkko, Ed.
+    ins: J. Arkko, (Ed.)
     name: Jari Arkko
     org: Ericsson
     email: jari.arkko@piuha.net
