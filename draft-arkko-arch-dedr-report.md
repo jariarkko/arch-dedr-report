@@ -406,4 +406,4 @@ The following is a list of participants on site and over a remote connection:
 
 # Acknowledgements {#ack}
 
-The author would like to thank the workshop participants, the members of the IAB, and the participants in the architecture discussion list for interesting discussions. The workshop organizers would also like to thank Nokia for hosting the workshop in excellent facilities in Kirkkonummi, Finland.
+The authors would like to thank the workshop participants, the members of the IAB, and the participants in the architecture discussion list for interesting discussions. The workshop organizers would also like to thank Nokia for hosting the workshop in excellent facilities in Kirkkonummi, Finland.
