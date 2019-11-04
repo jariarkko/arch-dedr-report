@@ -181,7 +181,9 @@ The Design Expectations vs. Deployment Reality in Protocol Development  Workshop
 
 # Introduction {#introduction}
  
-The Design Expectations vs. Deployment Reality in Protocol Development  Workshop was convened by the Internet Architecture Board (IAB) in June 2019. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration. While late in being submitted, this report is still an early version. Comments and contributions are appreciated.
+The Design Expectations vs. Deployment Reality in Protocol Development  Workshop was convened by the Internet Architecture Board (IAB) in June 2019. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration.
+
+   Note: While late in being submitted, this report is still an early version. Comments and contributions are appreciated. We expect to call for review of the -01 version.
 
 The background for the workshop was that a number of protocols have presumed specific deployment models during the development or early elaboration of the protocol. Actual deployments have, however, often run contrary to these early expectations when economies of scale, DDoS resilience, market consolidation, or other factors have come into play. These factors can result in the deployed reality being highly concentrated.
 
