@@ -151,14 +151,22 @@ informative:
    seriesinfo: Position paper submitted for the IAB DEDR workshop
   CFP:
    title: Design Expectations vs. Deployment Reality in Protocol Development Workshop 2019
+   date: April 2019
    author:
     - ins: IAB
    seriesinfo: https://www.iab.org/activities/workshops/dedr-workshop/
   POS:
    title: "Position Papers: DEDR Workshop"
+   date: June 2019
    author:
     - ins: IAB
    seriesinfo: https://www.iab.org/activities/workshops/dedr-workshop/position-papers/
+  ISPColumn:
+   title: Network Protocols and their Use
+   date: June 2019
+   author:
+    - ins: G. Huston
+   seriesinfo: https://www.potaroo.net/ispcol/2019-06/dedr.html
 
 --- abstract
 
@@ -196,7 +204,7 @@ The workshop call for papers invited the submission of position papers which wou
 * Survey a set of cases to identify common factors in these confounded expectations.
 * Explore remediations which foster user privacy, security and provider diversity in the face of these changes.
 
-A total of 21 position papers were received, listed in {{positionpapers}}.
+ A total of 21 position papers were received, listed in {{positionpapers}}. On site or remote were 30 participants, listed in {{participants}}.
 
 # Workshop Agenda
 
@@ -207,76 +215,6 @@ After opening and discussion of goals for the workshop, the discussion focused o
 * Centralised deployment models. The good and the bad of centralisation. Can centralisation be avoided? How?
 * Security. Are we addressing the right threats? What should we prepare ourselves for?
 * Future. What can we do? Should we get better at predicting, or should we do different things? 
-
-# Discussions
-
-## Past experiences
-
-To be filled...
-
-## Principles
-
-To be filled...
-
-## Centralised deployment models
-
-To be filled...
-
-## Security
-
-To be filled...
-
-## Future
-
-To be filled...
-
-# Conclusions
-
-## Summary of discussions
-
-The workshop met in sunny Finnish countryside and made the non-suprising observation that technologies sometimes get deployed in surprising ways. But the consequences of deployment choices can have an impact on security, privacy, centralised vs. distributed models, competition, surveillance, and the IETF community cares deeply about these aspects.
-
-The workshop also observed that technology is moving up the stack, e.g., in the areas of services, transport protocol functionality, security, naming, and so on.
-
-The workshop also advised that the prime factor driving deployments is perceived needs; expecting people to recognise obvious virtues and therefore deploy is not likely to work.
-
-It was also noted that interoperability continues to be important, and we need to explore what new interfaces need standardisation — this will enable different deployment models & competition. Prime factor driving deployments is actual needs; we cannot force anything to others but can provide solutions for those that need them. Needs and actions may fall on different parties.
-
-The workshop observed that the ecosystem is complex, including for instance many players, regulators, and so on. While the workshop discussed actions and advice, there is a critical question of who these are targeted towards. There is need to construct a map of what parties need to perform what actions.
-
-Some technical advice was also considered: balance user non-involvement and transparency and choice, to consider relevant threats such as communicating with malicious endpoints, to increase the ability of browsers in defending the users’ privacy, and avoid requiring centralised control or data storage points
-
-The workshop also discussed specific issues around routing, denial-of-service attacks, IOT systems, role of device manufacturers, the DNS, and regulatory reactions and their possible consequences.
-
-## Actions
-
-The workshop then turned into a discussion of what actions we can take:
-
-* Documenting our experiences?
-* Providing advice (to IETF, to others)
-* Waiting for the catastrophe that will make people agree to changes? (hopefully not this)
-* Work at the IETF?
-* Technical solutions/choices?
-
-The documents/outputs and actions described in the following were deemed relevant by the participants.
-
-### Potential architecture actions and outputs
-
-* Develop and document a modern threat model
-* Continue discussion of consolidation/centralisation issues
-* Document architectural principles, e.g., (re-)application of the end-to-end principle
-
-The first receiver of these thoughts is the IETF and protocol community, but combined with some evangelising & validation elsewhere
-
-### Potential other actions
-
-* Pursue specific IETF topics, e.g., work on taking into account reputation systems in IETF work, working to ensuring certificate scoping can be appropriately limited, building end-to-end encryption tools for applications, etc.
-* General deployment experiences/advice, and documenting deployment assumptions possibly already in WG charters
-* A report, and a short summary article will be produced from the workshop.
-
-## Feedback
-
-Feedback regarding the workshop is appreciated, and can be sent to the program committee, the IAB, or the architecture-discuss list.
 
 # Position Papers {#positionpapers}
 
@@ -306,7 +244,129 @@ The following position papers were submitted to the workshop:
 
 These papers are available from the IAB website {{CFP}} {{POS}}.
 
+# Discussions
+
+## Past experiences
+
+To be filled...
+
+## Principles
+
+To be filled...
+
+## Centralised deployment models
+
+To be filled...
+
+## Security
+
+To be filled...
+
+## Future
+
+The workshop turned into a discussion of what actions we can take:
+
+* Documenting our experiences?
+* Providing advice (to IETF, to others)
+* Waiting for the catastrophe that will make people agree to changes? (hopefully not this)
+* Work at the IETF?
+* Technical solutions/choices?
+
+The best way for ietf to do things is through standards; convinging people through other requests is difficult. The IETF needs to:
+
+* pick pieces that it is responsible for
+* being reactive for the rest, be available as an expert in other discussions, provide Internet technology clue where needed, etc.
+
+One key question is what other parties need to be involved in any discussions. Platform developers (mobile platforms, cloud systems, etc) is one such group. Specific technology or business groups (such as email provider or certificate authority forums) are another.
+
+The workshop also discussed specific technology issues, for instance around IOT systems. One observation in those systems is that there is no single model for applications, they vary. There are a lot of different constraints in different systems and different control points. What is needed perhaps most today is user control and transparency (for instance, via MUD descriptions). Another issue is management, particularly for devices that could be operational for decades. Given the diversity of IOT systems, it may also make more sense to build support systems for the broader solutions that specific solutions or specific protocols.
+
+There are also many security issues. While some of them are trivial (such as default passwords), one should also look forward and be prepared to have solutions for, say, trust management for long time scales, or be able to provide data minimization to cut down on potential for leakages. And the difficulty of establishing peer-to-peer security strengthens the need for a central point, which may also be harmful from a long-term privacy perspective.
+
+# Conclusions
+
+## Summary of discussions
+
+The workshop met in sunny Finnish countryside and made the non-suprising observation that technologies sometimes get deployed in surprising ways. But the consequences of deployment choices can have an impact on security, privacy, centralised vs. distributed models, competition, surveillance, and the IETF community cares deeply about these aspects, so it is worthwhile to spend time in analysis of these choices.
+
+The prime factor driving deployments is perceived needs; expecting people to recognise obvious virtues and therefore deploy is not likely to work.
+
+And the ecosystem is complex, including for instance many parties: different business roles, users, regulators, and so on, and perceptions of needs and ability to act depends highly on what party one talks to.
+
+While the workshop discussed actions and advice, there is a critical question of who these are targeted towards. There is need to construct a map of what parties need to perform what actions.
+
+The workshop also made some technical observations. One recent trend is that technology is moving up the stack, e.g., in the areas of services, transport protocol functionality, security, naming, and so on. This impacts how easy or hard changes are, and who is able to perform them.
+
+It was also noted that interoperability continues to be important, and we need to explore what new interfaces need standardisation — this will enable different deployment models & competition. Prime factor driving deployments is actual needs; we cannot force anything to others but can provide solutions for those that need them. Needs and actions may fall on different parties.
+
+The workshop also considered the balancing of user non-involvement and transparency and choice, relevant threats such as communicating with malicious endpoints, the role and willigness of browsers in increasing the ability to defending the users’ privacy, and concerns around centralised control or data storage points
+
+The workshop also discussed specific issues around routing, denial-of-service attacks, IOT systems, role of device manufacturers, the DNS, and regulatory reactions and their possible consequences.
+
+## Actions
+
+The prime conclusion from the workshop was that the topic is not completed in the workshop. Much more work is needed. The best way for ietf to do things is through standards. The IETF should focus on the parts that it is responsible for, and be available as an expert on other discussions.
+
+The documents/outputs and actions described in the following were deemed relevant by the participants.
+
+### Potential architecture actions and outputs
+
+* Develop and document a modern threat model
+* Continue discussion of consolidation/centralisation issues
+* Document architectural principles, e.g., (re-)application of the end-to-end principle
+
+The first receiver of these thoughts is the IETF and protocol community, but combined with some evangelising & validation elsewhere
+
+### Potential other actions
+
+* Pursue specific IETF topics, e.g., work on taking into account reputation systems in IETF work, working to ensuring certificate scoping can be appropriately limited, building end-to-end encryption tools for applications, etc.
+* General deployment experiences/advice, and documenting deployment assumptions possibly already in WG charters
+* A report, and a short summary article will be produced from the workshop.
+
+## Other publications
+
+The workshop results have also been reported at {{ISPColumn}} by Geoff Huston.
+
+## Feedback
+
+Feedback regarding the workshop is appreciated, and can be sent to the program committee, the IAB, or the architecture-discuss list.
+
 --- back
+
+# Particant List {#participants}
+
+The following is a list of participants on site and over a remote connection:
+
+* Arkko, Jari
+* Aura, Tuomas
+* Bertola, Vittorio
+* Bormann, Carsten
+* Bortzmeyer, Stéphane
+* Cooper, Alissa
+* Farrell, Stephen
+* Flinck, Hannu
+* Gahnberg, Carl
+* Hallam-Baker, Phillip
+* Hardie, Ted
+* Hoffman, Paul
+* Huitema, Christian (remote)
+* Huston, Geoff
+* Komaitis, Konstantinos
+* Kuhlewind, Mirja
+* Kutscher, Dirk
+* Li, Zhenbin
+* Maisonneuve, Julien
+* Mattson, John
+* Muller, Moritz
+* Ott, Jörg
+* Pardue, Lucas
+* Reid, Jim
+* Rieckers, Jan-Frederik
+* Sethi, Mohit
+* Shore, Melinda (remote)
+* Soininen, Jonne
+* Sullivan, Andrew
+* Trammell, Brian
 
 # Acknowledgements {#ack}
 

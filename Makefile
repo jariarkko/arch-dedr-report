@@ -18,7 +18,7 @@ cleantrash:
 
 jaricompile:	draft-arkko-arch-dedr-report.txt Makefile
 	scp draft-arkko-arch-dedr-report.txt \
-		jar@cloud1.arkko.eu:/var/www/www.arkko.com/html/ietf/dns
+		jar@cloud1.arkko.eu:/var/www/www.arkko.com/html/ietf/iab
 
 #		draft-arkko-arch-dedr-report.diff.html \
 #	rfcdiff draft-arkko-arch-dedr-report-00.txt draft-arkko-arch-dedr-report.txt
