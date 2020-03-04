@@ -265,11 +265,11 @@ Another principle appears to be first mover advantage. Several equally interesti
 
 The workshop also discussed different types of deployment patterns on the Internet:
 
-* Delivering functionality over Internet as a web service. The Internet is an open and standardised system, but the service on top may be closed, essentially running two components of the service provider's software against each other over the browser and Internet infrastructure. Several large application systems have grown in the Internet in this manner, encompassing large amounts of functionality and a large fraction of Internet users.
+* Delivering functionality over Internet as a web service. The Internet is an open and standardised system, but the service on top may be closed, essentially running two components of the same service provider's software against each other over the browser and Internet infrastructure. Several large application systems have grown in the Internet in this manner, encompassing large amounts of functionality and a large fraction of Internet users.
 
-* Delivering concentrated network services that offer the standard capabilities of the Internet. Examples in this category include the provisioning of DNS resolution, some mail services, and so on.
+* Delivering concentrated network services that offer the standard capabilities of the Internet. Examples in this category include the provisioning of some mail services, DNS resolution, and so on.
 
-The second case is more interesting for an Internet architecture discussion. There can, however, be different underlying situations in that case. The service may be simply a concentrated way to provide a commodity service. The market should find a natural equilibrium for such situations. This may be fine, particularly, where the service does not provide any new underlying advantage to whoever is providing it (in the form of user data that can be commercialized, for instance, or as training data for an important machine learning service).
+The second case is more interesting for an Internet architecture discussion. There can, however, be different underlying situations even in that case. The service may be simply a concentrated way to provide a commodity service. The market should find a natural equilibrium for such situations. This may be fine, particularly, where the service does not provide any new underlying advantage to whoever is providing it (in the form of user data that can be commercialized, for instance, or as training data for an important machine learning service).
 
 Secondly, the service may be an extension beyond standard protocols, leading to some questions about how well standards and user expectations match. But those questions could be addressed by better or newer standards. But the third situation is more troubling: the service are provided in this concentrated manner due to business patterns that make it easier for particular entities to deploy such services.
 
@@ -281,10 +281,10 @@ The hopeful side of this issue is that there are some potential answers:
 
 * DDOS defenses do not have to come through large entities, as layered defenses and federation also helps similarly.
 * Surveillance state data capture can be fought with data object encryption, and not storing all of the datal in one place.
-* Open interface help guard against the bundling of services in one large entity; as long as there are open, well-defined interface to specific functions these functions can also be performed by other parties.
+* Open interfaces help guard against the bundling of services in one large entity; as long as there are open, well-defined interface to specific functions these functions can also be performed by other parties.
 * Commercial surveillance does not seem to curbed by current means. But there are still possibilities, such as stronger regulation, data minimisation, or browsers acting on behalf of users. There are hopeful signs that at least some browsers are becoming more aggressive in this regard. But more is needed.
 
-One comment made in the workshop that the Internet community needs to move back from regulation to trying to curb the architectural trend of centralization instead. Another comment was that discussing this in the abstract is not as useful as more concrete, practical actions. For instance, one might imagine DOH deployments with larger number of trusted resolvers.
+One comment made in the workshop that the Internet community needs to curb the architectural trend of centralization. Another comment was that discussing this in the abstract is not as useful as more concrete, practical actions. For instance, one might imagine different DOH deployments with widely different implications for privacy or tolerance of failures.  Getting to the specifics of how a particular service can be made better is important.
 
 ## Security
 
@@ -310,8 +310,8 @@ The workshop turned into a discussion of what actions we can take:
 
 The best way for ietf to do things is through standards; convinging people through other requests is difficult. The IETF needs to:
 
-* pick pieces that it is responsible for
-* being reactive for the rest, be available as an expert in other discussions, provide Internet technology clue where needed, etc.
+* Pick pieces that it is responsible for.
+* Be reactive for the rest, be available as an expert in other discussions, provide Internet technology clue where needed, etc.
 
 One key question is what other parties need to be involved in any discussions. Platform developers (mobile platforms, cloud systems, etc) is one such group. Specific technology or business groups (such as email provider or certificate authority forums) are another.
 
@@ -323,7 +323,7 @@ There are also many security issues. While some of them are trivial (such as def
 
 ## Summary of discussions
 
-The workshop met in sunny Finnish countryside and made the non-suprising observation that technologies sometimes get deployed in surprising ways. But the consequences of deployment choices can have an impact on security, privacy, centralised vs. distributed models, competition, surveillance, and the IETF community cares deeply about these aspects, so it is worthwhile to spend time in analysis of these choices.
+The workshop met in sunny Finnish countryside and made the non-suprising observation that technologies sometimes get deployed in surprising ways. But the consequences of deployment choices can have an impact on security, privacy, centralised vs. distributed models, competition, surveillance. As the IETF community cares deeply about these aspects, it is worthwhile to spend time in analysis of these choices.
 
 The prime factor driving deployments is perceived needs; expecting people to recognise obvious virtues and therefore deploy is not likely to work.
 
@@ -341,7 +341,7 @@ The workshop also discussed specific issues around routing, denial-of-service at
 
 ## Actions
 
-The prime conclusion from the workshop was that the topic is not completed in the workshop. Much more work is needed. The best way for ietf to do things is through standards. The IETF should focus on the parts that it is responsible for, and be available as an expert on other discussions.
+The prime conclusion from the workshop was that the topic is not completed in the workshop. Much more work is needed. The best way for the IETF to make an impact is through standards. The IETF should focus on the parts that it is responsible for, and be available as an expert on other discussions.
 
 The documents/outputs and actions described in the following were deemed relevant by the participants.
 
