@@ -1,5 +1,5 @@
 EARLIERVERSIONNO	=	00
-EARLIERVERSION	=	draft-arkko-arch-dedr-report-$(EARLIERVERSIONNO).txt
+EARLIERVERSION	=	draft-iab-dedr-report-$(EARLIERVERSIONNO).txt
 
 all:	draft-arkko-arch-dedr-report.txt \
 	draft-arkko-arch-dedr-report-diff.html
@@ -18,17 +18,21 @@ else
 	    -b master https://github.com/martinthomson/i-d-template $(LIBDIR)
 endif
 
-draft-arkko-arch-dedr-report-diff.html:	draft-arkko-arch-dedr-report.txt \
+draft-iab-dedr-report.txt: draft-arkko-arch-dedr-report.txt
+	cp draft-arkko-arch-dedr-report.txt draft-iab-dedr-report.txt
+
+draft-iab-dedr-report-diff.html:	draft-arkko-arch-dedr-report.txt \
+					draft-iab-dedr-report.txt \
 					$(EARLIERVERSION)
-	rfcdiff $(EARLIERVERSION) draft-arkko-arch-dedr-report.txt
-	cp draft-arkko-arch-dedr-report-from--$(EARLIERVERSIONNO).diff.html draft-arkko-arch-dedr-report-diff.html
+	rfcdiff $(EARLIERVERSION) draft-iab-dedr-report.txt
+	cp draft-iab-dedr-report-from--$(EARLIERVERSIONNO).diff.html draft-iab-dedr-report-diff.html
 
 cleantrash:
 	rm -f *~
 
-jaricompile:	draft-arkko-arch-dedr-report.txt \
-		draft-arkko-arch-dedr-report-diff.html \
+jaricompile:	draft-iab-dedr-report.txt \
+		draft-iab-dedr-report-diff.html \
 		Makefile
-	scp draft-arkko-arch-dedr-report.txt \
-		draft-arkko-arch-dedr-report-diff.html \
-		jar@cloud1.arkko.eu:/var/www/www.arkko.com/html/ietf/iab
+	scp draft-iab-dedr-report.txt \
+		draft-iab-dedr-report-diff.html \
+		root@cloud3.arkko.eu:/var/www/www.arkko.com/html/ietf/iab
